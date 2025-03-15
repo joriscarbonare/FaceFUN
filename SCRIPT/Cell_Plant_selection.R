@@ -21,8 +21,8 @@ library(ggplot2)
 # df_try: TRY database containing additional photosynthetic pathway and PlantGrowthForm
 
 # Load raw vegetation data (last survey date)
-veg_data <- load("DATA/veg_survey_lastdate")
-
+load("DATA/veg_survey_lastdate.RData")
+veg_data <- veg_survey_lastdate
 # Load TERN data (photosynthetic pathways)
 tern_data <- read.csv("DATA/Photosynthetic_Pathways_of_Plants_TERN_v2_19092024.csv", 
                       stringsAsFactors = FALSE)
