@@ -89,7 +89,7 @@ df_long <- df_long %>%
 # STEP 6: Filter df_long to retain only understory vegetation.
 # We want to work only with species classified as "herb", "graminoid", or "fern" (i.e., typical understory plants).
 df_long <- df_long %>%
-  filter(PlantGrowthForm %in% c("herb", "graminoid", "fern"))
+  filter(PlantGrowthForm %in% c("herb", "graminoid"))
 
 # Check for species still missing PhotosyntheticPathway information.
 missing_species <- df_long %>% 
