@@ -325,64 +325,60 @@ for(j in seq_len(nrow(plot_ids))) {
 final_selected_cells <- bind_rows(final_selected_list)
 
 ################################################################################
-# STEP 8: VISUALIZATION WITH C3 AND C4 COLOR PALETTES
+# STEP 8: VISUALIZATION
 ################################################################################
-# We'll define a function that creates distinct color gradients for C3 vs C4
-# species, then apply it to the final selected cells. We also build a background
-# grid for each ring-plot, so we can see the entire set of cells.
+# We'll use shape for species, color for pathway
 
-species_pal <- function(species, pathway) {
-  c3_species <- unique(species[pathway == "C3"])
-  c4_species <- unique(species[pathway == "C4"])
-  
-  # Define separate gradients: warm for C3, cool for C4.
-  c3_cols <- colorRampPalette(c("red", "orange", "yellow"))(length(c3_species))
-  c4_cols <- colorRampPalette(c("blue", "cyan", "purple"))(length(c4_species))
-  
-  c3_map <- setNames(c3_cols, c3_species)
-  c4_map <- setNames(c4_cols, c4_species)
-  
-  # Combine into a single named vector.
-  full_map <- c(c3_map, c4_map)
-  out <- full_map[species]
-  return(out)
-}
+species_levels <- sort(unique(final_selected_cells$Species))
+final_selected_cells$Species <- factor(final_selected_cells$Species, levels = species_levels)
 
-final_selected_cells$Species <- factor(final_selected_cells$Species,
-                                       levels = unique(final_selected_cells$Species))
-final_selected_cells$Color <- species_pal(
-  final_selected_cells$Species,
-  final_selected_cells$PhotosyntheticPathway
-)
+# Assign shapes for species
+shape_vec <- c(0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19)
+shape_map <- setNames(shape_vec[seq_along(species_levels)], species_levels)
 
+# Color by C3 vs. C4
+pathway_colors <- c("C3" = "red", "C4" = "blue")
+
+# Optional cell grid (background tiles)
 cell_grid <- df_long %>%
   distinct(Ring, Plot, CellID, X, Y)
 
 ggplot() +
+  # Background tiles
   geom_tile(
     data = cell_grid,
     aes(x = X, y = Y),
-    fill = "grey90",
+    fill = "grey95",
     color = "grey80",
     width = 20,
     height = 20
   ) +
+  # Points for selected cells
   geom_point(
     data = final_selected_cells,
-    aes(x = X, y = Y, color = Color),
-    size = 2
+    aes(x = X, y = Y, shape = Species, color = PhotosyntheticPathway),
+    size = 3,
+    stroke = 1.1
   ) +
-  scale_color_identity("Species (C3 vs C4)",
-                       labels = final_selected_cells$Species,
-                       guide = "legend") +
-  facet_grid(Ring ~ Plot) +
+  # Manually define shapes and colors
+  scale_shape_manual(name = "Species", values = shape_map) +
+  scale_color_manual(name = "Photosynthetic pathway", values = pathway_colors) +
+  # Facet by Ring (rows) and Plot (columns), labeling outer strips
+  facet_grid(
+    Ring ~ Plot,
+    switch = "both",   # puts strip labels on left & top
+    labeller = labeller(
+      Ring = ~paste("Ring", .x),
+      Plot = ~paste("Plot", .x)
+    )
+  ) +
+  # Move facet strips outside the plotting area
   theme_minimal() +
-  labs(
-    title = "Spatial Distribution of Selected Sampling Cells (Backtracking)",
-    x = "X (cm)",
-    y = "Y (cm)"
-  )
+  theme(strip.placement = "outside") +  # ensures row/column labels are fully outside
+  labs(title = "Spatial distribution of selected sampling cells and species")
 
+# An exemple "Example_spatial_distribution_visualization.png"
+  
 ################################################################################
 # STEP 9: SUMMARY TABLE OF SELECTED SPECIES
 ################################################################################
@@ -395,3 +391,25 @@ species_summary <- final_selected_cells %>%
   arrange(desc(SelectionCount))
 
 print(species_summary)
+#> print(species_summary)
+# A tibble: 18 × 4
+# Species        PhotosyntheticPathway PlantGrowthForm SelectionCount
+# <fct>          <chr>                 <chr>                    <int>
+#   1 microlaena_st… C3                    graminoid                   23
+# 2 setaria_parvi… C4                    graminoid                   20
+# 3 paspalidium_d… C4                    graminoid                   13
+# 4 commelina_cya… C3                    herb                        12
+# 5 cynodon_dacty… C4                    graminoid                   10
+# 6 centella_asia… C3                    herb                         9
+# 7 hypochaeris_r… C3                    herb                         8
+# 8 hydrocotyle_s… C3                    herb                         7
+# 9 poranthera_mi… C3                    herb                         6
+# 10 axonopus_fiss… C4                    graminoid                    5
+# 11 fimbristylis_… C4                    graminoid                    5
+# 12 eragrostis_cu… C4                    graminoid                    2
+# 13 bidens_pilosa  C3                    herb                         2
+# 14 eragrostis_le… C4                    graminoid                    2
+# 15 cyperus_graci… C3                    graminoid                    1
+# 16 lomandra_fili… C3                    herb                         1
+# 17 hypoxis_hygro… C3                    herb                         1
+# 18 arthropodium_… C3                    herb                         1
