@@ -29,7 +29,14 @@ Raw phosphorus measurement data files that must not be modified:
 #### 📁 **NH4-NO3/**
 ##### 📁 **brut_data/**
 Raw nitrogen measurement data that must not be modified:
-- NH4 and NO3 measurements across different sampling lines
+- NH4 and NO3 measurements across different sampling lines (L1-L9)
+- a coming file about sample ID association
+
+#### 📁 **Respiration/**
+##### 📁 **brut_data/**
+Raw respiration measurement data that must not be modified:
+- **`RES_FACEFUN_brut.xlsx`** – Raw respiration measurements
+- **`wet_dry_repiration_facefun.xlsx`** – Wet/dry condition respiration data, and time of incubation
 
 ### 📂 **SCRIPTS**  
 This folder originally held analysis scripts. Some example/early-analysis files (including a cell selection script and an example figure) were removed to keep the repository focused on core datasets. 
