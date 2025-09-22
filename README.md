@@ -20,7 +20,7 @@ This repository serves as a workspace for storing datasets, developing and refin
 **`veg_survey_lastdate.RData`** – Last survey only subset of the EucFACE vegetation survey dataset.
 
 ### 📂 **SCRIPTS**  
-This folder originally held analysis scripts. Some example/early-analysis files (including a cell selection script and an example figure) were removed to keep the repository focused on core datasets. If you need those analyses restored, contact the project maintainer or check older commits in version control.
+This folder originally held analysis scripts. Some example/early-analysis files (including a cell selection script and an example figure) were removed to keep the repository focused on core datasets. 
 
 ---
 
