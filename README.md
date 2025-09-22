@@ -30,7 +30,7 @@ This folder originally held analysis scripts. Some example/early-analysis files 
 - **Nicole Hynson** – PI, University of Hawaiʻi at Mānoa  
 - **Jennifer Bhatnagar** – PI, Boston University  
 - **Edward Brzostek** – PI, West Virginia University  
-- **Mitra Ghotbi** – Postdoctoral Researcher, University of Hawaiʻi at Mānoa
-- **Joris Carbonare** -PhD student, University of Mississippi 
+- **Joris Carbonare** -PhD student, University of Mississippi
+- (to complete)
 
 ---
