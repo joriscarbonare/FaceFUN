@@ -1,0 +1,15 @@
+Sample ID,Sample Details,Test Name,Result,Units,Absorbance,Time,Manual Dil,Auto Dil
+STANDARD 1,,bray-p 1, 0.0045,mgP/L,0.004520,Wed Jul 09 20:07:21 2025,1,1
+STANDARD 90,,bray-p 1, 0.0104,mgP/L,0.010367,Wed Jul 09 20:08:41 2025,1,1
+STANDARD 91,,bray-p 1, 0.0199,mgP/L,0.019937,Wed Jul 09 20:10:00 2025,1,1
+STANDARD 92,,bray-p 1, 0.0366,mgP/L,0.036556,Wed Jul 09 20:10:57 2025,1,1
+STANDARD 93,,bray-p 1, 0.0861,mgP/L,0.086074,Wed Jul 09 20:11:58 2025,1,1
+STANDARD 94,,bray-p 1, 0.1654,mgP/L,0.165448,Wed Jul 09 20:12:52 2025,1,1
+STANDARD 95,,bray-p 1, 0.2409,mgP/L,0.240929,Wed Jul 09 20:13:45 2025,1,1
+STANDARD 96,,bray-p 1, 0.3327,mgP/L,0.332667,Wed Jul 09 20:14:38 2025,1,1
+STANDARD 0,,bray-p 1, 0.0045,mgP/L,0.004451,Wed Jul 09 20:15:31 2025,1,1
+C C V,,bray-p 1, 0.4809,mgP/L,0.159768,Wed Jul 09 20:16:24 2025,1,1
+C C B ,,bray-p 1, 0.0026,mgP/L,0.004673,Wed Jul 09 20:17:18 2025,1,1
+mq water,,bray-p 1,-0.0063,mgP/L,0.001781,Wed Jul 09 20:18:11 2025,1,1
+C C V,,bray-p 1, 0.4886,mgP/L,0.162277,Wed Jul 09 20:19:04 2025,1,1
+C C B ,,bray-p 1, 0.0033,mgP/L,0.004888,Wed Jul 09 20:19:58 2025,1,1
