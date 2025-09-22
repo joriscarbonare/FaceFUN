@@ -11,6 +11,7 @@ This repository serves as a workspace for storing datasets, developing and refin
 ## **Repository Structure**  
 
 ### 📂 **DATA**  
+#### 📂 **plant_data**
 **`EucFACE_vegsurvey_consolidated_data.csv`** – Vegetation survey dataset from EucFACE, providing species presence/absence data across rings, plots, quadrant and sampling cells.
 
 **`Photosynthetic_Pathways_of_Plants_TERN_v2_19092024.csv`** – Dataset from TERN (Terrestrial Ecosystem Research Network), containing species-level classifications of photosynthetic pathways (C3/C4) along with other ecological traits.
