@@ -1,0 +1,50 @@
+Sample ID,Sample Details,Test Name,Result,Units,Absorbance,Time,Manual Dil,Auto Dil
+C C V,,Nitrate 2, 0.9264,mg N/L,0.262938,Mon Aug 25 21:50:57 2025,1,1
+C C B ,,Nitrate 2,-0.0060,mg N/L,0.016354,Mon Aug 25 19:54:07 2025,1,1
+61,,Nitrate 2, 0.2029,mg N/L,0.071613,Mon Aug 25 19:56:10 2025,1,1
+62,,Nitrate 2, 0.1052,mg N/L,0.045784,Mon Aug 25 19:58:15 2025,1,1
+63,,Nitrate 2, 0.1368,mg N/L,0.054124,Mon Aug 25 20:00:20 2025,1,1
+64,,Nitrate 2, 0.0866,mg N/L,0.040840,Mon Aug 25 20:02:23 2025,1,1
+65,,Nitrate 2, 0.1006,mg N/L,0.044550,Mon Aug 25 20:04:26 2025,1,1
+66,,Nitrate 2, 0.0885,mg N/L,0.041344,Mon Aug 25 20:06:29 2025,1,1
+67,,Nitrate 2, 0.0629,mg N/L,0.034580,Mon Aug 25 20:08:32 2025,1,1
+68,,Nitrate 2, 0.0903,mg N/L,0.041833,Mon Aug 25 20:10:35 2025,1,1
+69,,Nitrate 2, 0.0561,mg N/L,0.032778,Mon Aug 25 20:12:38 2025,1,1
+70,,Nitrate 2, 0.0474,mg N/L,0.030492,Mon Aug 25 20:14:42 2025,1,1
+C C V,,Nitrate 2, 0.9522,mg N/L,0.269763,Mon Aug 25 21:51:52 2025,1,1
+C C B ,,Nitrate 2,-0.0070,mg N/L,0.016094,Mon Aug 25 20:18:49 2025,1,1
+71,,Nitrate 2, 0.0663,mg N/L,0.035484,Mon Aug 25 20:20:53 2025,1,1
+72,,Nitrate 2, 0.0670,mg N/L,0.035680,Mon Aug 25 20:22:58 2025,1,1
+73,,Nitrate 2, 0.0723,mg N/L,0.037070,Mon Aug 25 20:25:02 2025,1,1
+74,,Nitrate 2, 0.1948,mg N/L,0.069472,Mon Aug 25 20:27:06 2025,1,1
+75,,Nitrate 2, 0.0677,mg N/L,0.035861,Mon Aug 25 20:29:10 2025,1,1
+61-DUP,,Nitrate 2, 0.2223,mg N/L,0.076740,Mon Aug 25 20:31:13 2025,1,1
+76,,Nitrate 2, 0.0904,mg N/L,0.041849,Mon Aug 25 20:33:16 2025,1,1
+77,,Nitrate 2, 0.1044,mg N/L,0.045568,Mon Aug 25 20:35:20 2025,1,1
+78,,Nitrate 2, 0.0340,mg N/L,0.026943,Mon Aug 25 20:37:23 2025,1,1
+79,,Nitrate 2, 0.4367,mg N/L,0.133428,Mon Aug 25 20:39:26 2025,1,1
+C C V,,Nitrate 2, 0.9582,mg N/L,0.271344,Mon Aug 25 21:52:47 2025,1,1
+C C B ,,Nitrate 2,-0.0041,mg N/L,0.016874,Mon Aug 25 20:43:31 2025,1,1
+80,,Nitrate 2, 0.1695,mg N/L,0.062789,Mon Aug 25 20:45:34 2025,1,1
+81,,Nitrate 2, 0.1153,mg N/L,0.048448,Mon Aug 25 20:47:39 2025,1,1
+82,,Nitrate 2, 0.1459,mg N/L,0.056539,Mon Aug 25 20:49:44 2025,1,1
+83,,Nitrate 2, 0.2532,mg N/L,0.084908,Mon Aug 25 20:51:47 2025,1,1
+84,,Nitrate 2, 0.5005,mg N/L,0.150303,Mon Aug 25 20:53:49 2025,1,1
+85,,Nitrate 2, 0.1936,mg N/L,0.069146,Mon Aug 25 20:55:52 2025,1,1
+86,,Nitrate 2, 0.0926,mg N/L,0.042446,Mon Aug 25 20:57:55 2025,1,1
+87,,Nitrate 2, 0.0985,mg N/L,0.044012,Mon Aug 25 20:59:57 2025,1,1
+88,,Nitrate 2, 0.1971,mg N/L,0.070075,Mon Aug 25 21:02:00 2025,1,1
+89,,Nitrate 2, 0.0554,mg N/L,0.032599,Mon Aug 25 21:04:02 2025,1,1
+C C V,,Nitrate 2, 0.9770,mg N/L,0.276330,Mon Aug 25 21:53:41 2025,1,1
+C C B ,,Nitrate 2,-0.0051,mg N/L,0.016599,Mon Aug 25 21:08:07 2025,1,1
+90,,Nitrate 2, 0.1085,mg N/L,0.046649,Mon Aug 25 21:10:12 2025,1,1
+91,,Nitrate 2, 0.0299,mg N/L,0.025851,Mon Aug 25 21:12:17 2025,1,1
+92,,Nitrate 2, 0.0175,mg N/L,0.022574,Mon Aug 25 21:13:11 2025,1,1
+93,,Nitrate 2, 0.0356,mg N/L,0.027372,Mon Aug 25 21:14:06 2025,1,1
+94,,Nitrate 2, 0.1784,mg N/L,0.065139,Mon Aug 25 21:15:00 2025,1,1
+95,,Nitrate 2, 0.1702,mg N/L,0.062965,Mon Aug 25 21:15:55 2025,1,1
+96,,Nitrate 2, 0.0229,mg N/L,0.024011,Mon Aug 25 21:16:50 2025,1,1
+97,,Nitrate 2, 0.3379,mg N/L,0.107306,Mon Aug 25 21:17:44 2025,1,1
+61-DUP,,Nitrate 2, 0.2134,mg N/L,0.074391,Mon Aug 25 21:18:39 2025,1,1
+C C V,,Nitrate 2, 0.9621,mg N/L,0.272383,Mon Aug 25 21:54:36 2025,1,1
+C C B ,,Nitrate 2,-0.0127,mg N/L,0.014597,Mon Aug 25 21:20:28 2025,1,1
