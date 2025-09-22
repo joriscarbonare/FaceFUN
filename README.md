@@ -11,13 +11,25 @@ This repository serves as a workspace for storing datasets, developing and refin
 ## **Repository Structure**  
 
 ### 📂 **DATA**  
-**`EucFACE_vegsurvey_consolidated_data.csv`** – Vegetation survey dataset from EucFACE, providing species presence/absence data across rings, plots, quadrant and sampling cells.
 
-**`Photosynthetic_Pathways_of_Plants_TERN_v2_19092024.csv`** – Dataset from TERN (Terrestrial Ecosystem Research Network), containing species-level classifications of photosynthetic pathways (C3/C4) along with other ecological traits.
+Each data subfolder follows a strict organization where raw data is stored in a `brut_data` directory. These raw data files must never be modified to ensure data integrity. Any data processing or modifications should be done through scripts that read a copy from `brut_data` and save results in appropriate output directories.
 
-**`TRY_Categorical_Traits_Lookup_Table_2012_03_17_TestRelease.xlsx`** – Extract from the TRY Plant Trait Database, providing a wide range of plant functional traits, including growth form (herb, graminoid, fern).
+#### 📁 **plant_data/**
+- **`EucFACE_vegsurvey_consolidated_data.csv`** – Vegetation survey dataset from EucFACE, providing species presence/absence data across rings, plots, quadrant and sampling cells.
+- **`Photosynthetic_Pathways_of_Plants_TERN_v2_19092024.csv`** – Dataset from TERN (Terrestrial Ecosystem Research Network), containing species-level classifications of photosynthetic pathways (C3/C4) along with other ecological traits.
+- **`TRY_Categorical_Traits_Lookup_Table_2012_03_17_TestRelease.xlsx`** – Extract from the TRY Plant Trait Database, providing a wide range of plant functional traits, including growth form (herb, graminoid, fern).
+- **`veg_survey_lastdate.RData`** – Last survey only subset of the EucFACE vegetation survey dataset.
 
-**`veg_survey_lastdate.RData`** – Last survey only subset of the EucFACE vegetation survey dataset.
+#### 📁 **PO4/**
+##### 📁 **brut_data/**
+Raw phosphorus measurement data files that must not be modified:
+- **`JORIS-BRAYP-*.csv`** – Bray-P measurements for different sample sets
+- **`PO4_sample_ID.xlsx`** – Sample identification and metadata
+
+#### 📁 **NH4-NO3/**
+##### 📁 **brut_data/**
+Raw nitrogen measurement data that must not be modified:
+- NH4 and NO3 measurements across different sampling lines
 
 ### 📂 **SCRIPTS**  
 This folder originally held analysis scripts. Some example/early-analysis files (including a cell selection script and an example figure) were removed to keep the repository focused on core datasets. 
