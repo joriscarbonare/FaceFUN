@@ -12,7 +12,7 @@ This repository serves as a workspace for storing datasets, developing and refin
 
 ### 📂 **DATA**  
 
-Each data subfolder follows a strict organization where raw data is stored in a `brut_data` directory. These raw data files must never be modified to ensure data integrity. Any data processing or modifications should be done through scripts that read a copy from `brut_data` and save results in appropriate output directories.
+Each data subfolder follows a strict organization where raw data is stored in a `raw` directory. These raw data files must never be modified to ensure data integrity. 
 
 #### 📁 **plant_data/**
 - **`EucFACE_vegsurvey_consolidated_data.csv`** – Vegetation survey dataset from EucFACE, providing species presence/absence data across rings, plots, quadrant and sampling cells.
@@ -21,19 +21,20 @@ Each data subfolder follows a strict organization where raw data is stored in a 
 - **`veg_survey_lastdate.RData`** – Last survey only subset of the EucFACE vegetation survey dataset.
 
 #### 📁 **PO4/**
-##### 📁 **brut_data/**
+- ##### 📁 **raw/**
 Raw phosphorus measurement data files that must not be modified:
 - **`JORIS-BRAYP-*.csv`** – Bray-P measurements for different sample sets
 - **`PO4_sample_ID.xlsx`** – Sample identification and metadata
 
 #### 📁 **NH4-NO3/**
-##### 📁 **brut_data/**
-Raw nitrogen measurement data that must not be modified:
-- NH4 and NO3 measurements across different sampling lines (L1-L9)
-- a coming file about sample ID association
+- ##### 📁 **raw/**
+Raw nitrogen measurement data files that must not be modified:
+- **`JORIS-NH4-L*.csv`** – Ammonium (NH4) measurements per sampling line (L1–L9)
+- **`JORIS-NO3-L*.csv`** – Nitrate (NO3) measurements per sampling line (L1–L9)
+- **`NO3-NH4_sample_ID.xlsx`** – Sample identification and metadata (if available)
 
 #### 📁 **Respiration/**
-##### 📁 **brut_data/**
+- ##### 📁 **raw/**
 Raw respiration measurement data that must not be modified:
 - **`RES_FACEFUN_brut.xlsx`** – Raw respiration measurements
 - **`wet_dry_repiration_facefun.xlsx`** – Wet/dry condition respiration data, and time of incubation
