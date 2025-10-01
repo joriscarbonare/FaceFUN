@@ -50,6 +50,9 @@ This folder originally held analysis scripts. Some example/early-analysis files 
 - **Jennifer Bhatnagar** – PI, Boston University  
 - **Edward Brzostek** – PI, West Virginia University  
 - **Joris Carbonare** -PhD student, University of Mississippi 
+- **Jensen Nipko** -PhD student, West Virginia University
+- **Corinne Vietorisz** -PhD student, Boston University
+- **Asha Thapa** -PhD student, Boston University
 
 _(Additional collaborators to be completed)_
 
