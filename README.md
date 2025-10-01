@@ -2,7 +2,7 @@
 
 ## **Overview**  
 
-The **FaceFUN** project investigates how plant-associated fungi influence vegetation dynamics and ecosystem processes under global change factors, with a specific focus on **phosphorus-limited dry forest-grassland systems**. Research is conducted at **EucFACE (Eucalyptus Free-Air CO₂ Enrichment)**, where vegetation shifts in response to **elevated CO₂ (eCO₂)**are examined through a multi-scale approach combining **field-based sampling, controlled growth chamber experiments, environmental DNA (eDNA) and RNA (eRNA) analyses, and ecosystem process modeling (MODEX)** to assess plant-soil-microbe interactions under elevated CO₂
+The **FaceFUN** project investigates how plant-associated fungi influence vegetation dynamics and ecosystem processes under global change factors, with a specific focus on **phosphorus-limited dry forest-grassland systems**. Research is conducted at **EucFACE (Eucalyptus Free-Air CO₂ Enrichment)**, where vegetation shifts in response to **elevated CO₂ (eCO₂)** are examined through a multi-scale approach combining **field-based sampling, controlled growth chamber experiments, environmental DNA (eDNA) and RNA (eRNA) analyses, and ecosystem process modeling (MODEX)** to assess plant-soil-microbe interactions under elevated CO₂
 
 This repository serves as a workspace for storing datasets, developing and refining analysis scripts, visualizing results through figures and graphs, and maintaining version history throughout the project.
 
